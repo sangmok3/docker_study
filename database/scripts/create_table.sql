@@ -1,4 +1,7 @@
+SET global time_zone = 'Asia/Seoul';
+SET time_zone = 'Asia/Seoul';
+
 CREATE TABLE visits (
 visitor_name varchar(25) not null,
-visit_datetime datetime default DATE_ADD(NOW(),INTERVAL 9 HOUR) not null
+visit_datetime datetime default NOW() not null
 );
