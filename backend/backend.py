@@ -12,7 +12,6 @@ mysql = MySQL()
 app.config['MYSQL_DATABASE_USER'] = 'mysql_user'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'mysql_password'
 app.config['MYSQL_DATABASE_DB'] = 'visitlog'
-
 app.config['MYSQL_DATABASE_HOST'] = os.getenv('DBHOST', 'localhost') 
 
 mysql.init_app(app)
